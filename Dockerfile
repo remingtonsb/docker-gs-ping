@@ -26,14 +26,14 @@ RUN go test -v ./...
 ## Deploy the application binary into a lean image
 ##
 
-FROM gcr.io/distroless/base-debian11 AS build-release-stage
+#FROM gcr.io/distroless/base-debian11 AS build-release-stage
 
-WORKDIR /
+#WORKDIR /
 
-COPY --from=build-stage /docker-gs-ping /docker-gs-ping
+#COPY --from=build-stage /docker-gs-ping /docker-gs-ping
 
-EXPOSE 8080
+#EXPOSE 8080
 
-USER nonroot:nonroot
+#USER nonroot:nonroot
 
-ENTRYPOINT ["/docker-gs-ping"]
+#ENTRYPOINT ["/docker-gs-ping"]
