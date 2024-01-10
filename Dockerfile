@@ -18,7 +18,3 @@ RUN CGO_ENABLED=0 GOOS=linux go build -o /docker-gs-ping
 ##
 ## Run the tests in the container
 ##
-
-FROM build-stage AS run-test-stage
-RUN go test -v ./...
-
