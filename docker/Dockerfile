@@ -6,7 +6,7 @@
 
 FROM golang:1.19 AS build-stage
 
-WORKDIR /src
+WORKDIR ../
 
 COPY go.mod go.sum ./
 RUN go mod download
